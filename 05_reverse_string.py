@@ -14,3 +14,4 @@ def reverse_string(phrase):
 
     return "".join(lettersList)
 
+    # return phrase[::-1]

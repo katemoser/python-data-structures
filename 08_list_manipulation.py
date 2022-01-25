@@ -30,7 +30,7 @@ def list_manipulation(lst, command, location, value=None):
         [20, 1, 2, 3, 30]
 
         >>> lst
-        [20, 1, 2, 3, 30] 
+        [20, 1, 2, 3, 30]
 
     Invalid commands or locations should return None:
 
@@ -48,11 +48,13 @@ def list_manipulation(lst, command, location, value=None):
     elif command == "add":
         if location == "end":
             lst.append(value)
+            # return lst
         elif location == "beginning":
             lst.insert(0, value)
+            # return lst
         else:
             return None
         return lst
-    return None
+    return None # remove
 
 

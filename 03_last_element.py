@@ -9,5 +9,7 @@ def last_element(lst):
     """
     if len(lst) == 0:
         return None
-    return lst.pop()
+    return lst.pop() # return / dont mutate / lst[-1]
 
+    if lst:
+        return lst[-1]

@@ -15,3 +15,5 @@ def multiple_letter_count(phrase):
         else:
             letter_count[letter] +=1
     return letter_count
+
+    letter_count[letter] = letter_count.get(letter, 0) + 1
